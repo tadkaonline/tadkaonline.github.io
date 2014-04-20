@@ -24,7 +24,7 @@
 
 				<div class="collapse navbar-collapse navHeaderCollapse">
 					<ul class="nav navbar-nav navbar-left">
-						<li><a href="#">Add Item</a></li>
+						<li><a href="<?php echo site_url('add')?>">Add Item</a></li>
 					</ul>
 				</div>
 			</div>
@@ -46,23 +46,23 @@
 									<tbody>
 										<tr>
 											<th>Time</th>
-											<td>12:45 pm</td>
+											<td class="col-lg-7">12:45 pm</td>
 										</tr>
 										<tr>
 											<th>Room No</th>
-											<td>C-002</td>
+											<td class="col-lg-7">C-002</td>
 										</tr>
 										<tr>
 											<th>Hostel</th>
-											<td>BH-2</td>
+											<td class="col-lg-7">BH-2</td>
 										</tr>
 										<tr>
 											<th>Phone</th>
-											<td>+91-123-456-789</td>
+											<td class="col-lg-7">+91-123-456-789</td>
 										</tr>
 										<tr>
 											<th>Comments</th>
-											<td>Any Comment</td>
+											<td class="col-lg-7">My comment</td>
 										</tr>
 									</tbody>
 								</table>
@@ -82,7 +82,7 @@
 							<div class="page-header text-center">
 								<h3 class="text-danger sender-name">Sai Siddharth</h3>
 								<span class="glyphicon glyphicon-time text-left"></span>
-								<span class="">25 mintues remaining</span>
+								<span class="">44 mintues remaining</span>
 							</div>
 
 							<div class="page-body">
@@ -90,23 +90,23 @@
 									<tbody>
 										<tr>
 											<th>Time</th>
-											<td>12:55 pm</td>
+											<td class="col-lg-7">12:45 pm</td>
 										</tr>
 										<tr>
 											<th>Room No</th>
-											<td>C-007</td>
+											<td class="col-lg-7">C-002</td>
 										</tr>
 										<tr>
 											<th>Hostel</th>
-											<td>BH-2</td>
+											<td class="col-lg-7">BH-2</td>
 										</tr>
 										<tr>
 											<th>Phone</th>
-											<td>+91-123-456-789</td>
+											<td class="col-lg-7">+91-123-456-789</td>
 										</tr>
 										<tr>
 											<th>Comments</th>
-											<td>Any Comment</td>
+											<td class="col-lg-7">My comment</td>
 										</tr>
 									</tbody>
 								</table>
