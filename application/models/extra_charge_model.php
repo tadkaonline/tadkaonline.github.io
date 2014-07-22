@@ -1,18 +1,15 @@
 <?php
 
-class Extra_charge_model extends CI_Model {
-
+class Extra_charge_model extends CI_Model
+{
 
 	public function search($where = NULL)
 	{
 		$table_name = 'extra_charges';
 
-		if($where == NULL)
-		{
+		if ($where == NULL) {
 			$result = $this->db->get($table_name);
-		}
-		else
-		{
+		} else {
 			$result = $this->db->get_where($table_name, $where);
 		}
 
@@ -23,14 +20,10 @@ class Extra_charge_model extends CI_Model {
 	{
 		$table_name = 'extra_charges';
 
-		if($data == NULL)
-		{
+		if ($data == NULL) {
 			return array('status' => false, 'error' => 'Required parameters missing');
 		}
 
 		$this->db->insert($table_name, $data);
 	}
 }
-
-
-?>
