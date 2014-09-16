@@ -75,7 +75,7 @@ class Add extends CI_Controller {
 									'half_charge' => $half, 'chapati_charge' => $chapati);
 
 			$this->extra_charge_model->add($dataExtraCharge);
-			redirect(site_url(), 'refresh');
+			redirect(site_url('view'), 'refresh');
 		}
 	}
 }

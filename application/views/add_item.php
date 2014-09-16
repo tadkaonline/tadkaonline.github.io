@@ -5,9 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="<?php echo site_url('/media/css/bootstrap.css')?>">
 		<link rel="stylesheet" type="text/css" href="<?php echo site_url('/media/css/style.css')?>">
-		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="<?php echo site_url('/media/js/jquery-2.1.1.min.js')?>"></script>
 		<script type="text/javascript">
-
 			$(document).ready(function(){
 				if( !$.trim( $('#errors').html() ).length ) {
 					$('#errors').hide();
@@ -23,20 +22,20 @@
 		===============-->
 		<div class="navbar navbar-inverse navbar-static-top">
 			<div class="container">
-
 				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-
-				<a href="<?php echo site_url()?>" class="navbar-brand">TADKA</a>
-
+				<a href="<?php echo site_url()?>" class="navbar-brand">Tadka Portal</a>
 				<div class="collapse navbar-collapse navHeaderCollapse">
 					<ul class="nav navbar-nav navbar-left">
-						<li class="active"><a href="#">I'm going to TADKA!</a></li>
 						<li><a target="_blank" href="<?php echo site_url('/media/img/menu.jpg')?>">Menu</a></li>
+                        <li><a href="<?php echo site_url('view')?>">View</a></li>
 					</ul>
+					<ul class="nav navbar-nav navbar-right">
+                        <li><a><strong>&copy; Shivam Dixit</strong></a></li>
+                    </ul>
 				</div>
 			</div>
 		</div>
@@ -47,7 +46,7 @@
 					<div class="panel panel-default">
 						<div class="panel-body">
 							<div class="page-header">
-								<h3>Going to TADKA ? Enter details...</h3>
+								<h3>Going to Tadka? Enter details...</h3>
 							</div>
 							<div class="page-body">
 								<?php echo form_open()?>
@@ -78,7 +77,7 @@
 
 									<div class="form-group">
 										<label for="time">Accepting Orders till *</label>
-										<input type="text" class="form-control" id="time" name="time" placeholder="Enter number of Hours from now. Ex: 5" value="<?php echo set_value('time')?>" required>
+										<input type="text" class="form-control" id="time" name="time" placeholder="Number of hours from now after which you will not accept orders" value="<?php echo set_value('time')?>" required>
 									</div>
 
 									<div class="form-group">
@@ -100,7 +99,7 @@
 										<label for="phone">Comments</label>
 										<textarea class="form-control" name="comments" value="<?php echo set_value('comments')?>"></textarea>
 									</div>
-									<button type="submit" class="btn btn-primary">Submit</button>
+									<button type="submit" class="btn btn-success">Submit</button>
 								</form>
 							</div>
 						</div>
@@ -114,12 +113,6 @@
 					</div>
 				</div>
 
-			</div>
-		</div>
-
-		<div class="navbar navbar-default navbar-fixed-bottom">
-			<div class="container">
-				<p class="navbar-text pull-left">&copy; Shivam Dixit - 2014</p>.
 			</div>
 		</div>
 
