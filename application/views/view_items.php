@@ -37,7 +37,7 @@
             <?php
                 if(isset($error))
                 {
-                    echo '<div class="error text-center"><h2><strong>Oops! Looks like no one is going :(</strong></h2></div>';
+                    echo '<div class="error text-center"><h2><strong>Oops! Looks like no one is going yet :(</strong></h2><p>Check back later</p></div>';
                 }
                 else
                 {

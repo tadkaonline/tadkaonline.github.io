@@ -47,6 +47,7 @@
 						<div class="panel-body">
 							<div class="page-header">
 								<h3>Going to Tadka? Enter details...</h3>
+                                <p class="text-danger"><strong>Please don't spam, your IP is recorded</strong></p>
 							</div>
 							<div class="page-body">
 								<?php echo form_open()?>
